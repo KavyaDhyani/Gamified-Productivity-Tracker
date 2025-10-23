@@ -76,8 +76,13 @@ export const signIn = async (req, res)=>{
 
 // Sign out a user by clearing the authentication cookie
 export const signOut = (req, res) => {
-  res.clearCookie("token");
-  res.json({ message: "Logged out successfully" });
+  res.clearCookie("token", {
+    httpOnly: true,
+    secure: true,       
+    sameSite: "none",    
+    path: "/",        
+  });
+  return res.status(200).json({ message: "Logged out successfully" });
 };
 
 // Get user details if authenticated

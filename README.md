@@ -6,6 +6,10 @@ A full-stack MERN application that transforms productivity tracking into an enga
 
 **🔗 Live Link:** `https://gamified-productivity-tracker.vercel.app`
 
+**Deployment:**
+- Frontend: Deployed on [Vercel](https://vercel.com)
+- Backend: Deployed on [Render](https://render.com)
+
 ---
 
 ## 📋 Table of Contents
@@ -39,7 +43,7 @@ A full-stack MERN application that transforms productivity tracking into an enga
 - **Progress Visualization**: Animated XP bar and achievement cards
 
 ### 🎨 User Experience
-- **Dark Mode**: Beautiful dark theme optimized for extended use
+- **Theme**: Follows browser/system default theme preference
 - **Real-time Validation**: Instant feedback on form inputs
 - **Toast Notifications**: Non-intrusive success/error messages
 - **Responsive Design**: Seamless experience across all devices
