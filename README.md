@@ -4,7 +4,7 @@ A full-stack MERN application that transforms productivity tracking into an enga
 
 ## 🌐 Live Demo
 
-**🔗 Live Link:** `[Add your deployed link here]`
+**🔗 Live Link:** `https://gamified-productivity-tracker.vercel.app`
 
 ---
 
