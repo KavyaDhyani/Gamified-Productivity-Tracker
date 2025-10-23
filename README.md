@@ -82,15 +82,19 @@ Gamified Productivity Tracker/
 ├── client/                          # Frontend React application
 │   ├── public/                      # Static assets
 │   ├── src/
+│   │   ├── api/
+│   │   │   └── axios.js            # Axios instance configuration
 │   │   ├── app/
 │   │   │   └── store.js            # Redux store configuration
+│   │   ├── assets/
+│   │   │   └── react.svg           # React logo
 │   │   ├── components/
 │   │   │   ├── AchievementBadge.jsx # Achievement card component
 │   │   │   ├── Badge.jsx           # Simple badge component
 │   │   │   ├── ChartCard.jsx       # Chart wrapper component
 │   │   │   ├── Navbar.jsx          # Navigation bar
 │   │   │   ├── SessionCard.jsx     # Session display card
-│   │   │   ├── ThemeProvider.jsx   # Dark mode provider
+│   │   │   ├── ThemeProvider.jsx   # Theme provider
 │   │   │   ├── TimerCircle.jsx     # Circular timer component
 │   │   │   ├── ToastProvider.jsx   # Toast notification system
 │   │   │   └── XPBar.jsx           # XP progress bar
@@ -105,26 +109,29 @@ Gamified Productivity Tracker/
 │   │   │   └── Signup.jsx          # Sign up page
 │   │   ├── utils/
 │   │   │   └── gamification.js     # Gamification utilities
+│   │   ├── App.css                 # App styles
 │   │   ├── App.jsx                 # Main app component
 │   │   ├── index.css               # Global styles
 │   │   └── main.jsx                # App entry point
-│   ├── CODE_DOCUMENTATION.md       # Comprehensive code guide
-│   ├── CLEANUP_SUMMARY.md          # Code cleanup report
+│   ├── .gitignore
+│   ├── eslint.config.js            # ESLint configuration
+│   ├── index.html                  # HTML entry point
 │   ├── package.json
 │   ├── tailwind.config.js          # Tailwind configuration
 │   └── vite.config.js              # Vite configuration
 │
 └── server/                          # Backend Node.js application
     ├── config/
-    │   └── db.js                   # MongoDB connection
+    │   ├── db.js                   # MongoDB connection
+    │   └── token.js                # JWT token generation
     ├── controllers/
     │   ├── auth.controller.js      # Authentication logic
     │   └── session.controller.js   # Session management logic
     ├── middleware/
-    │   └── auth.middleware.js      # JWT verification middleware
+    │   └── isAuth.js               # JWT verification middleware
     ├── models/
-    │   ├── User.js                 # User schema
-    │   └── Session.js              # Session schema
+    │   ├── session.model.js        # Session schema
+    │   └── user.model.js           # User schema
     ├── routes/
     │   ├── auth.routes.js          # Authentication routes
     │   └── session.routes.js       # Session routes
