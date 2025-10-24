@@ -22,6 +22,7 @@ app.use(cors({
 }))
 
 //routes
+app.get("/", (req, res) => res.status(200).send("Server running")) // route for uptime robot to ping the server
 app.use('/api/auth', authRouter)
 app.use('/api/session', sessionRouter)
 
